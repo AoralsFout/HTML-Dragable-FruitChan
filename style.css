@@ -1,0 +1,47 @@
+.canvas-container {
+  width: 220px;
+  height: 256px;
+  margin: 20px auto;
+}
+.bpm-input {
+  width: 50%;
+  margin: 20px auto;
+  font-size: 18px;
+}
+.button-container {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.button {
+  width: 30%;
+  margin: 2px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #ccc;
+}
+#drag {
+  display: block;
+  position: absolute;
+  width: 300px;
+  z-index: 10;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+#dragheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196f3;
+  color: #fff;
+}
+#zhanwei {
+  height: 41px;
+  display: none;
+}

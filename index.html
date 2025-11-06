@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>水果娘</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="drag">
+      <div id="zhanwei"></div>
+      <div id="dragheader">拖拽这里移动水果娘</div>
+      <div class="canvas-container" onclick="toggleDetail()">
+        <canvas id="canvas" width="220" height="256"></canvas>
+      </div>
+      <span id="tips">点击水果娘 隐藏/显示 选项</span>
+      <div id="detail">
+        <span>自定义BPM:</span>
+        <input type="number" id="bpm" class="bpm-input" value="120" />
+        <div class="button-container">
+          <button class="button" onclick="changeAnimation(animationList[0])">
+            转圈圈
+          </button>
+          <button class="button" onclick="changeAnimation(animationList[2])">
+            呼啦~
+          </button>
+          <button class="button" onclick="changeAnimation(animationList[3])">
+            跳
+          </button>
+          <button class="button" onclick="changeAnimation(animationList[4])">
+            渡步
+          </button>
+          <button class="button" onclick="changeAnimation(animationList[5])">
+            等待
+          </button>
+          <button class="button" onclick="changeAnimation(animationList[6])">
+            摇
+          </button>
+          <button class="button" onclick="changeAnimation(animationList[7])">
+            风车
+          </button>
+          <button class="button" onclick="changeAnimation(animationList[8])">
+            踏步
+          </button>
+          <button class="button" onclick="changeAnimation(animationList[9])">
+            僵尸
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
